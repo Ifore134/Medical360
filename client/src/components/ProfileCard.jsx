@@ -5,14 +5,17 @@ import FormField from './FormField';
 
 const ProfileCard = () => {
   const fields = [
-    { name: 'Name', initialValue: '205', editable: true },
-    { name: 'Room Type', initialValue: 'VIP', editable: true },
-    // Add other fields as necessary
+    { name: 'Name', initialValue: 'John Doe', editable: true ,showEditIcon: true },
+    { name: 'Email', initialValue: 'john.doe@stonybrook.edu',editable: true, showEditIcon: true },
+    { name: 'Department', initialValue: 'Dermato-Genetics',editable: true, showEditIcon: true },
+    { name: 'Password', initialValue: 'XXXXX',editable: true, showEditIcon: true },
+
+
+
   ];
 
   // Function to handle form submission
   const handleSubmit = (formData) => {
-    // Here you would handle the form submission,
     // such as updating the profile data or sending it to a server
     console.log('Updated Profile Data:', formData);
   };

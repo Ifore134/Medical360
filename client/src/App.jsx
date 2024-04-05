@@ -1,6 +1,6 @@
 import RegistrationForm from "./screenpages/RegistrationForm";
 import LoginForm from "./screenpages/LoginForm";
-import AppPage from "./components/AppPage";
+import AppPage from "./screenpages/AppPage";
 import DoctorCard from "./screenpages/DoctorCard";
 import PatientCard from "./screenpages/PatientCard";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -31,7 +31,7 @@ function App() {
             <Route path="/equipmentcard" element={<EquipmentCard/>} />
             <Route path="/roomcard" element={<RoomCard/>} />
             <Route path="/profilecard" element={<ProfileCard/>} />
-          {/* <Route path="/" element={<AppPage/>} /> */}
+          <Route path="/apppage" element={<AppPage/>} />
           
         </Routes>
       </AuthContextProvider>
